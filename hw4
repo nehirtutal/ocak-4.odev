@@ -1,0 +1,19 @@
+def en_buyuk_ve_en_kucuk_bul():
+    sayilar = [] 
+
+    # Kullanıcıdan 5 adet tam sayı alıyoruz
+    for i in range(5):
+        sayi = int(input(f"{i+1}. sayıyı girin: "))
+        sayilar.append(sayi)
+
+    # Listenin en büyük ve en küçük elemanlarını bulmak için
+    en_buyuk = max(sayilar)
+    en_kucuk = min(sayilar)
+
+    # Sonuçları ekrana yansıtıyoruz
+    print(f"Girilen sayılar: {sayilar}")
+    print(f"En büyük sayı: {en_buyuk}")
+    print(f"En küçük sayı: {en_kucuk}")
+
+# Fonksiyonu çağır
+en_buyuk_ve_en_kucuk_bul()
